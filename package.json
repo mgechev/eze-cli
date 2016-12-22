@@ -1,0 +1,24 @@
+{
+  "name": "eze-cli",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Minko Gechev <mgechev@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "protractor": "^4.0.13",
+    "tmp": "0.0.31",
+    "webdriver-manager": "^10.3.0",
+    "yargs": "^6.5.0"
+  },
+  "devDependencies": {
+    "@types/chalk": "^0.4.31",
+    "@types/protractor": "^4.0.0",
+    "@types/tmp": "0.0.32",
+    "@types/yargs": "^6.3.3"
+  }
+}
