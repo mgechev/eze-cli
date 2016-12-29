@@ -35,11 +35,12 @@ if (argv['i'] || argv['initialize']) {
   const config = generateProtractorConfig(dir);
   writeFileSync(configFile.name, config.config);
 
-  webdriverRun();
+  const shutdown = webdriverRun();
 
   setTimeout(() => {
-    protractorStart(configFile.name);
+    protractorStart(configFile.name, shutdown);
     // config.cleanup();
     // configFile.removeCallback();
   }, 5000);
 }
+

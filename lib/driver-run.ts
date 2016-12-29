@@ -13,4 +13,7 @@ export default () => {
       console.log(`stderr: ${stderr}`);
     }
   });
+  return () => {
+    exec('./node_modules/.bin/webdriver-manager shutdown');
+  };
 };
